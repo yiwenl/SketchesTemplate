@@ -39,6 +39,7 @@ const ExperimentItem = ({ index, experiment: { cover, video, title } }) => {
             loop
             width={280}
             height={280}
+            unoptimized={true}
           ></Image>
         </div>
       </Link>
