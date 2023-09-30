@@ -1,6 +1,37 @@
 import styles from "../styles/About.module.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: "SketchesXR | Yi-Wen Lin",
+  description: "WebXR Sketches by Yi-Wen Lin",
+  metadataBase: new URL("https://yiwenl.github.io/SketchesXR"),
+  openGraph: {
+    title: "SketchesXR | Yi-Wen Lin",
+    type: "website",
+    description: "WebXR Sketches by Yi-Wen Lin",
+    url: "http://yiwenl.github.io/SketchesXR/",
+    image: "/coverSketches.jpg",
+    images: [
+      {
+        url: "https://yiwenl.github.io/SketchesXR/coverSketches.jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "photo",
+    creator: "@yiwenl",
+    title: "SketchesXR | Yi-Wen Lin",
+    description: "WebXR Sketches by Yi-Wen Lin",
+    url: "http://yiwenl.github.io/SketchesXR/",
+    image: "https://yiwenl.github.io/SketchesXR/coverSketches.jpg",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+};
+
 export default function About() {
   return (
     <div>
