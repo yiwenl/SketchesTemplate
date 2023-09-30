@@ -20,8 +20,8 @@ const ExperimentItem = ({ index, experiment: { cover, video, title } }) => {
             height: 280,
           }}
         >
-          {/* <Image src={`${basePath}/${cover}`} alt="" fill /> */}
-          <Image
+          <Image src={`${basePath}/${cover}`} alt="" fill />
+          {/* <Image
             src={`${basePath}/${video}`}
             className={styles.videoContainer}
             alt={title}
@@ -30,7 +30,7 @@ const ExperimentItem = ({ index, experiment: { cover, video, title } }) => {
             width={280}
             height={280}
             unoptimized={true}
-          ></Image>
+          ></Image> */}
         </div>
       </Link>
     </div>
