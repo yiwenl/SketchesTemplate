@@ -13,6 +13,7 @@ const ExperimentItem = ({ index, experiment: { cover, video, title } }) => {
   const onMouseLeave = () => {
     setHovered(false);
   };
+
   return (
     <div
       className={styles.itemContainer}
@@ -28,17 +29,17 @@ const ExperimentItem = ({ index, experiment: { cover, video, title } }) => {
           }}
         >
           <Image src={`${basePath}/${cover}`} alt="" fill />
-          {hovered && (
-            <Image
-              src={`${basePath}/${video}`}
-              className={styles.videoContainer}
-              alt={title}
-              autoPlay
-              loop
-              width={280}
-              height={280}
-            ></Image>
-          )}
+          <Image
+            src={`${basePath}/${video}`}
+            className={
+              styles.videoContainer + " " + (hovered ? styles.show : "")
+            }
+            alt={title}
+            autoPlay
+            loop
+            width={280}
+            height={280}
+          ></Image>
         </div>
       </Link>
     </div>

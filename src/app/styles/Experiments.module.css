@@ -86,4 +86,9 @@
   left: 0;
   position: absolute;
   z-index: 2;
+  display: none;
+}
+
+.show {
+  display: block;
 }
